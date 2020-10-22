@@ -40,6 +40,7 @@ import gpsGeoActionConfigDirective from './gps-geo-action-config.directive';
 import PubsubConfigDirective from "./pubsub-config.directive";
 import CheckPointConfigDirective from "./check-point-config.directive";
 import AzureIotHubConfigDirective from './azure-iot-hub-config.directive';
+import DeleteTimeseriesFromDatabaseDirective from "./delete-timeseries-from-database-config.directive";
 
 export default angular.module('thingsboard.ruleChain.config.action', [])
     .directive('tbActionNodeTimeseriesConfig', TimeseriesConfigDirective)
@@ -68,4 +69,5 @@ export default angular.module('thingsboard.ruleChain.config.action', [])
     .directive('tbActionNodePubSubConfig', PubsubConfigDirective)
     .directive('tbActionNodeCheckPointConfig', CheckPointConfigDirective)
     .directive('tbActionNodeAzureIotHubConfig', AzureIotHubConfigDirective)
+    .directive('tbActionNodeDeleteTimeseriesFromDatabase', DeleteTimeseriesFromDatabaseDirective)
     .name;
